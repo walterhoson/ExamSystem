@@ -8,7 +8,6 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.wayne.exam.BaseTest;
-import com.wayne.exam.dao.RoleDao;
 import com.wayne.exam.entity.Role;
 
 public class RoleServiceTest extends BaseTest{

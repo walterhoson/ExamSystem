@@ -1,10 +1,12 @@
 package com.wayne.exam.entity;
 
 public class Role {
+	
 	private Integer id;
 	private String authority;
 	private String name;
 	private String code;
+	
 	public Integer getId() {
 		return id;
 	}
