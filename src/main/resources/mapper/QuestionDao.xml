@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wayne.exam.dao.QuestionDao">
+	<insert id="insertQuestion" useGeneratedKeys="true" keyColumn="id"
+		keyProperty="id">
+		INSERT INTO
+		es_question(title,year,title_num,content,duration,type,option_a,option_b,option_c,
+		option_d,option_e,option_f,option_g,option_h,answer,examing_point,keyword,
+		reference,create_time,creator,last_modify,expose_times,right_times,wrong_times,
+		difficulty,analysis,score)
+		VALUES
+		(#{title},#{year},#{titleNum},#{content},#{duration},#{type},#{optionA},#{optionB},
+		#{optionC},#{optionD},#{optionE},#{optionF},#{optionG},#{optionH},#{answer},
+		#{examingPoint},#{keyword},#{reference},#{createTime},#{creator},#{lastModify},
+		#{exposeTimes},#{rightTimes},#{wrongTimes},#{difficulty},#{analysis},#{score})
+	</insert>
+
+	<!-- <update id="updateExamPaper" parameterType="com.wayne.exam.entity.ExamPaper">
+		update es_exam_paper
+		<set>
+			<if test="paperName != null">paper_name=#{paperName},</if>
+			<if test="userId != null">user_id=#{userId.userId},</if>
+			<if test="userId != null">user_id=#{userId},</if>
+			<if test="questionId != null">question_id=#{questionId},</if>
+			<if test="wrongAnswers != null">wrong_answers=#{wrongAnswers},</if>
+			<if test="answers != null">answers=#{answers},</if>
+			<if test="checkoutTime != null">checkout_time=#{checkoutTime},</if>
+			<if test="score != null">score=#{score},</if>
+			<if test="isLocked != null">is_locked=#{isLocked}</if>
+		</set>
+		where id = #{id}
+	</update> -->
+</mapper>

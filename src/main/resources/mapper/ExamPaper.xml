@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wayne.exam.dao.ExamPaperDao">
+	<!-- useGeneratedKeys,表示自增 使用jdbc的getGeneratedKeys获取数据库自增主键值 -->
+	<insert id="insertExamPaper" useGeneratedKeys="true" keyColumn="id"
+		keyProperty="id">
+		INSERT INTO
+		es_exam_paper(paper_name,user_id,question_id,wrong_answers,answers,checkout_time,score,is_locked)
+		VALUES
+		(#{paperName},#{userId},#{questionId},#{wrongAnswers},#{answers},#{checkoutTime},#{score},#{isLocked})
+	</insert>
+
+	<update id="updateExamPaper" parameterType="com.wayne.exam.entity.ExamPaper">
+		update es_exam_paper
+		<set>
+			<if test="paperName != null">paper_name=#{paperName},</if>
+			<!--<if test="userId != null">user_id=#{userId.userId},</if>  -->
+			<if test="userId != null">user_id=#{userId},</if>
+			<if test="questionId != null">question_id=#{questionId},</if>
+			<if test="wrongAnswers != null">wrong_answers=#{wrongAnswers},</if>
+			<if test="answers != null">answers=#{answers},</if>
+			<if test="checkoutTime != null">checkout_time=#{checkoutTime},</if>
+			<if test="score != null">score=#{score},</if>
+			<if test="isLocked != null">is_locked=#{isLocked}</if>
+		</set>
+		where id = #{id}
+	</update>
+</mapper>
