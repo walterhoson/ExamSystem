@@ -188,7 +188,7 @@ public class UpLoadExcelUtil {
 						//年份--year
 					} else if (c == 1) {
 						cell.setCellType(Cell.CELL_TYPE_STRING);
-						question.setYear(cell.getStringCellValue());
+						question.setYear(Integer.parseInt(cell.getStringCellValue()));
 						//题号--titleNum
 					}else if (c == 2) {
 						//由于题目上最前面有题号，此字段暂时不用

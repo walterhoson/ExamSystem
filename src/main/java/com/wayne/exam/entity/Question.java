@@ -5,7 +5,7 @@ import java.util.Date;
 public class Question {
 	private Integer id;
 	private String title;
-	private String year;
+	private Integer year;
 	private Integer titleNum;
 	private String content;
 	private Integer duration;
@@ -44,10 +44,10 @@ public class Question {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public String getYear() {
+	public Integer getYear() {
 		return year;
 	}
-	public void setYear(String year) {
+	public void setYear(Integer year) {
 		this.year = year;
 	}
 	public Integer getTitleNum() {

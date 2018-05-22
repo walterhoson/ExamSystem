@@ -3,6 +3,24 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
+<!-- <resultMap id="questionResultMap" type="com.wayne.exam.entity.Question">
+	<id column="id" jdbcType="int" property="id" />
+	<result column="title" jdbcType="VARCHAR" property="title" />
+	<result column="content" jdbcType="VARCHAR" property="content" />
+	<result column="type" jdbcType="int" property="type" />
+	<result column="option_a" jdbcType="VARCHAR" property="optionA" />
+	<result column="option_b" jdbcType="VARCHAR" property="optionB" />
+	<result column="option_c" jdbcType="VARCHAR" property="optionC" />
+	<result column="option_d" jdbcType="VARCHAR" property="optionD" />
+	<result column="option_e" jdbcType="VARCHAR" property="optionE" />
+	<result column="option_f" jdbcType="VARCHAR" property="optionF" />
+	<result column="answer" jdbcType="VARCHAR" property="answer" />
+	<result column="examing_point" jdbcType="VARCHAR" property="examingPoint" />
+	<result column="keyword" jdbcType="VARCHAR" property="keyword" />
+	<result column="analysis" jdbcType="VARCHAR" property="analysis" />
+</resultMap>
+ -->
+
 <mapper namespace="com.wayne.exam.dao.QuestionDao">
 	<insert id="insertQuestion" useGeneratedKeys="true" keyColumn="id"
 		keyProperty="id">
@@ -18,19 +36,35 @@
 		#{exposeTimes},#{rightTimes},#{wrongTimes},#{difficulty},#{analysis},#{score})
 	</insert>
 
-	<!-- <update id="updateExamPaper" parameterType="com.wayne.exam.entity.ExamPaper">
-		update es_exam_paper
-		<set>
-			<if test="paperName != null">paper_name=#{paperName},</if>
-			<if test="userId != null">user_id=#{userId.userId},</if>
-			<if test="userId != null">user_id=#{userId},</if>
-			<if test="questionId != null">question_id=#{questionId},</if>
-			<if test="wrongAnswers != null">wrong_answers=#{wrongAnswers},</if>
-			<if test="answers != null">answers=#{answers},</if>
-			<if test="checkoutTime != null">checkout_time=#{checkoutTime},</if>
-			<if test="score != null">score=#{score},</if>
-			<if test="isLocked != null">is_locked=#{isLocked}</if>
-		</set>
-		where id = #{id}
-	</update> -->
+	<!-- <update id="updateExamPaper" parameterType="com.wayne.exam.entity.ExamPaper"> 
+		update es_exam_paper <set> <if test="paperName != null">paper_name=#{paperName},</if> 
+		<if test="userId != null">user_id=#{userId.userId},</if> <if test="userId 
+		!= null">user_id=#{userId},</if> <if test="questionId != null">question_id=#{questionId},</if> 
+		<if test="wrongAnswers != null">wrong_answers=#{wrongAnswers},</if> <if test="answers 
+		!= null">answers=#{answers},</if> <if test="checkoutTime != null">checkout_time=#{checkoutTime},</if> 
+		<if test="score != null">score=#{score},</if> <if test="isLocked != null">is_locked=#{isLocked}</if> 
+		</set> where id = #{id} </update> -->
+
+
+	<!-- <select id="queryQuestionYearByTitle" resultType="Hashmap" parameterType="String"> -->
+	<!-- 返回[{year=2017},{year=}...] -->
+	<select id="queryQuestionYearByTitle" resultType="Integer"
+		parameterType="String">
+		SELECT distinct year FROM es_question WHERE title =
+		#{title}
+	</select>
+
+	<select id="queryQuestion"  resultType="com.wayne.exam.entity.Question">
+		SELECT 
+		id,title,year,content,type,option_a,option_b,option_c,
+		option_d,option_e,option_f,answer,examing_point,keyword,analysis
+		FROM es_question 
+		<where>
+			<if test="title != null">title = #{title}</if>
+			<if test="year != null">and year = #{year}</if>
+			<if test="type != null">and type = #{type}</if>
+		</where>
+	</select>
+
+
 </mapper>

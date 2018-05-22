@@ -2,9 +2,9 @@ package com.wayne.exam.entity;
 
 import java.util.Date;
 
-public class User {
+public class UserInfo {
 
-	private Integer userId;
+	private Long userId;
 	private String weiChatId;
 	private String userName;
 	private String trueName;
@@ -18,12 +18,13 @@ public class User {
 	private Date lastLoginTime;
 	private String school;
 	private String major;
+	private String subject;
 
-	public Integer getUserId() {
+	public Long getUserId() {
 		return userId;
 	}
 
-	public void setUserId(Integer userId) {
+	public void setUserId(Long userId) {
 		this.userId = userId;
 	}
 
@@ -129,6 +130,14 @@ public class User {
 
 	public void setMajor(String major) {
 		this.major = major;
+	}
+
+	public String getSubject() {
+		return subject;
+	}
+
+	public void setSubject(String subject) {
+		this.subject = subject;
 	}
 
 }

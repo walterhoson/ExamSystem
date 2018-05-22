@@ -34,9 +34,11 @@
 	<!-- 3.定义视图解析器 -->
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="order" value="1" />
+		<property name="order" value="0" />
 		<property name="prefix" value="/WEB-INF/html/"></property>
 		<property name="suffix" value=".html"></property>
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.InternalResourceView" />
 	</bean>
 
 	<!-- 配置ViewResolver视图解析器，可以用多个ViewResolver，使用order属性排序。InternalResourceViewResolver放在最后 -->
@@ -44,9 +46,11 @@
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<!-- <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" 
 			/> -->
-		<property name="order" value="0" />
-		<property name="prefix" value="/WEB-INF/Question/" />
+		<property name="order" value="1" />
+		<property name="prefix" value="/WEB-INF/jsp/" />
 		<property name="suffix" value=".jsp" />
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.InternalResourceView" />
 	</bean>
 
 
@@ -60,8 +64,9 @@
 		<!-- <property name="maxInMemorySize" value="10960"></property> -->
 	</bean>
 
-	<!-- 在spring-mvc.xml文件中加入这段配置后，spring返回给页面的都是utf-8编码了 ,似乎不起作用。。。-->
-	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+	<!-- 在spring-mvc.xml文件中加入这段配置后，spring返回给页面的都是utf-8编码了 ,似乎不起作用。。。 -->
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
 		<property name="messageConverters">
 			<list>
 				<bean

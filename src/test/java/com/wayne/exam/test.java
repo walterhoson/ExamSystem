@@ -3,6 +3,18 @@ package com.wayne.exam;
 public class test {
 
 	public static void main(String[] args) {
+		double sum = 0;
+		for (int i = 1; i < 20; i++) {
+			int ji = 1;
+			for (int j = 1; j <= i; j++) {
+				ji = ji * j;
+			}
+			sum = sum + (double) 1 / (double) ji;
+		}
+		System.out.println(sum);
+		
+		
+		
 		/*// 先创建一个路径
 		File folder = new File("D:\\resources");
 		if (!folder.exists()) {

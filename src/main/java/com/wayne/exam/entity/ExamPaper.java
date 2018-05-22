@@ -8,7 +8,7 @@ public class ExamPaper {
 	private String paperName;
 	private Integer userId;
 	private Integer questionId;
-	private String wrongAnswers;
+	private String userAnswers;
 	private String answers;
 	private Date checkoutTime;
 	private Integer score;
@@ -38,11 +38,11 @@ public class ExamPaper {
 	public void setQuestionId(Integer questionId) {
 		this.questionId = questionId;
 	}
-	public String getWrongAnswers() {
-		return wrongAnswers;
+	public String getUserAnswers() {
+		return userAnswers;
 	}
-	public void setWrongAnswers(String wrongAnswers) {
-		this.wrongAnswers = wrongAnswers;
+	public void setUserAnswers(String userAnswers) {
+		this.userAnswers = userAnswers;
 	}
 	public String getAnswers() {
 		return answers;

@@ -23,7 +23,7 @@ public class ExamPaperTest extends BaseTest{
 		examPaper.setPaperName("test1");
 		examPaper.setUserId(1);
 		examPaper.setQuestionId(2);
-		examPaper.setWrongAnswers("A,B,C,D");
+		examPaper.setUserAnswers("A,B,C,D");
 		examPaper.setAnswers("A,B,C,D");
 /*		Calendar calendar = Calendar.getInstance();
 		calendar.set(2018, 1, 1); // 年月日 也可以具体到时分秒如calendar.set(2015, 10, 12,11,32,52);
