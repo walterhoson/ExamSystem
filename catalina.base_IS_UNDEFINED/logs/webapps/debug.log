@@ -1,0 +1,55 @@
+2018-04-17 10:13:53.503 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - ==>  Preparing: SELECT distinct year FROM es_question WHERE title = ? 
+2018-04-17 10:13:53.568 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - ==> Parameters: 计算机二级真题(String)
+2018-04-17 10:13:53.593 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - <==      Total: 12
+2018-04-17 10:27:51.727 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - ==>  Preparing: SELECT distinct year FROM es_question WHERE title = ? 
+2018-04-17 10:27:51.789 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - ==> Parameters: 计算机二级真题(String)
+2018-04-17 10:27:51.818 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - <==      Total: 12
+2018-04-17 10:29:54.554 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - ==>  Preparing: SELECT distinct year FROM es_question WHERE title = ? 
+2018-04-17 10:29:54.619 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - ==> Parameters: 计算机二级真题(String)
+2018-04-17 10:29:54.651 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - <==      Total: 12
+2018-04-17 14:16:34.294 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==>  Preparing: SELECT id,title,content,type,option_a,option_b,option_c, option_d,option_e,option_f,answer,examing_point,keyword,analysis FROM es_question WHERE title = ?, 
+2018-04-17 14:16:34.340 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==> Parameters: 计算机二级真题(String)
+2018-04-17 14:17:42.173 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==>  Preparing: SELECT id,title,content,type,option_a,option_b,option_c, option_d,option_e,option_f,answer,examing_point,keyword,analysis FROM es_question WHERE title = ?, 
+2018-04-17 14:17:42.248 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==> Parameters: 计算机二级真题(String)
+2018-04-17 14:20:00.968 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==>  Preparing: SELECT id,title,content,type,option_a,option_b,option_c, option_d,option_e,option_f,answer,examing_point,keyword,analysis FROM es_question WHERE title = ? 
+2018-04-17 14:20:01.018 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==> Parameters: 计算机二级真题(String)
+2018-04-17 14:20:01.177 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - <==      Total: 1078
+2018-04-17 14:20:33.998 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==>  Preparing: SELECT id,title,content,type,option_a,option_b,option_c, option_d,option_e,option_f,answer,examing_point,keyword,analysis FROM es_question WHERE title = ? 
+2018-04-17 14:20:34.056 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==> Parameters: 计算机二级真题(String)
+2018-04-17 14:20:34.208 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - <==      Total: 1078
+2018-04-17 14:21:19.608 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==>  Preparing: SELECT id,title,content,type,option_a,option_b,option_c, option_d,option_e,option_f,answer,examing_point,keyword,analysis FROM es_question WHERE title = ? 
+2018-04-17 14:21:19.679 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==> Parameters: 计算机二级真题(String)
+2018-04-17 14:21:19.834 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - <==      Total: 1078
+2018-04-17 14:22:07.820 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==>  Preparing: SELECT id,title,content,type,option_a,option_b,option_c, option_d,option_e,option_f,answer,examing_point,keyword,analysis FROM es_question WHERE title = ? 
+2018-04-17 14:22:07.870 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==> Parameters: 计算机二级真题(String)
+2018-04-17 14:22:08.029 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - <==      Total: 1078
+2018-04-17 14:22:45.959 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==>  Preparing: SELECT id,title,content,type,option_a,option_b,option_c, option_d,option_e,option_f,answer,examing_point,keyword,analysis FROM es_question WHERE title = ? 
+2018-04-17 14:22:46.018 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==> Parameters: 计算机二级真题(String)
+2018-04-17 14:22:46.202 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - <==      Total: 1078
+2018-04-17 14:23:25.584 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==>  Preparing: SELECT id,title,content,type,option_a,option_b,option_c, option_d,option_e,option_f,answer,examing_point,keyword,analysis FROM es_question WHERE title = ? 
+2018-04-17 14:23:25.652 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==> Parameters: 计算机二级真题(String)
+2018-04-17 14:23:25.811 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - <==      Total: 1078
+2018-04-17 14:23:58.451 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==>  Preparing: SELECT id,title,content,type,option_a,option_b,option_c, option_d,option_e,option_f,answer,examing_point,keyword,analysis FROM es_question WHERE title = ? 
+2018-04-17 14:23:58.503 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==> Parameters: 计算机二级真题(String)
+2018-04-17 14:23:58.647 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - <==      Total: 1078
+2018-04-17 14:26:40.065 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==>  Preparing: SELECT id,title,year,content,type,option_a,option_b,option_c, option_d,option_e,option_f,answer,examing_point,keyword,analysis FROM es_question WHERE title = ? 
+2018-04-17 14:26:40.122 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==> Parameters: 计算机二级真题(String)
+2018-04-17 14:26:40.300 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - <==      Total: 1078
+2018-04-17 14:33:38.712 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - ==>  Preparing: SELECT distinct year FROM es_question WHERE title = ? 
+2018-04-17 14:33:38.796 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - ==> Parameters: 计算机二级真题(String)
+2018-04-17 14:33:38.825 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - <==      Total: 12
+2018-04-17 14:34:40.795 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - ==>  Preparing: SELECT distinct year FROM es_question WHERE title = ? 
+2018-04-17 14:34:40.851 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - ==> Parameters: 计算机二级真题(String)
+2018-04-17 14:34:40.874 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - <==      Total: 12
+2018-04-17 14:36:10.658 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - ==>  Preparing: SELECT distinct year FROM es_question WHERE title = ? 
+2018-04-17 14:36:10.729 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - ==> Parameters: 计算机二级真题(String)
+2018-04-17 14:36:10.757 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - <==      Total: 12
+2018-04-17 14:39:41.958 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - ==>  Preparing: SELECT distinct year FROM es_question WHERE title = ? 
+2018-04-17 14:39:42.036 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - ==> Parameters: 计算机二级真题(String)
+2018-04-17 14:39:42.067 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - <==      Total: 12
+2018-04-17 14:40:35.241 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - ==>  Preparing: SELECT distinct year FROM es_question WHERE title = ? 
+2018-04-17 14:40:35.300 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - ==> Parameters: 计算机二级真题(String)
+2018-04-17 14:40:35.332 [main] DEBUG c.w.exam.dao.QuestionDao.queryQuestionYearByTitle - <==      Total: 12
+2018-04-17 14:44:12.044 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==>  Preparing: SELECT id,title,year,content,type,option_a,option_b,option_c, option_d,option_e,option_f,answer,examing_point,keyword,analysis FROM es_question WHERE title = ? and year = ? and type = ? 
+2018-04-17 14:44:12.124 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - ==> Parameters: 计算机二级真题(String), 2015(Integer), 1(Integer)
+2018-04-17 14:44:12.211 [main] DEBUG com.wayne.exam.dao.QuestionDao.queryQuestion - <==      Total: 28

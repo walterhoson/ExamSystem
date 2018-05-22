@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+	<title>Create Account</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="../resources/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="../resources/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+	<link href="../resources/css/login_style.css" rel="stylesheet" type="text/css">	
+	<link href="../resources/css/bootstrapValidator.css" rel="stylesheet" type="text/css">	
+	
+	<script type="text/javascript" src="../resources/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../resources/js/bootstrapValidator.js"></script>
+	<script type="text/javascript" src="../resources/js/jquery-form.js"></script>
+	<script type="text/javascript" src="../resources/js/register.js"></script>	
+</head>
+<body class="templatemo-bg-gray">
+	<h1 class="margin-bottom-15">创建教师账户</h1>
+	<div class="container">
+		<div class="col-md-12">			
+			<form id="Registerform" action="register_teacher" class="form-horizontal templatemo-create-account templatemo-container" role="form" action="#" method="post">
+				<div class="form-inner">
+					<div class="form-group">
+			          <div class="col-md-6">		          	
+			            <label for="trueName" class="control-label">姓名</label>
+			            <input type="text" class="form-control" id="trueName" name="trueName" placeholder="">		            		            		            
+			          </div>          
+			        </div>
+			        <div class="form-group">
+			          <div class="col-md-6">		          	
+			            <label for="email" class="control-label">Email</label>
+			            <input type="email" class="form-control" id="email" name="email" placeholder="">		            		            		            
+			          </div>              
+			        </div>	
+			        <div class="form-group">
+			          <div class="col-md-6">		          	
+			            <label for="tel" class="control-label">手机号</label>
+			            <input type="text" class="form-control" id="tel" name="tel" placeholder="">		            		            		            
+			          </div>              
+			        </div>			           
+			        <div class="form-group">
+			          <div class="col-md-6">
+			            <label for="password" class="control-label">密码</label>
+			            <input type="password" class="form-control" id="password" name="password" placeholder="">
+			          </div>
+			         
+			        </div>
+					<div class="form-group">
+			         <div class="col-md-6">
+			            <label for="confirmPassword" class="control-label">确认密码</label>
+			            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="">
+			          </div>
+			        </div>
+			        <div class="form-group">
+			          <div class="col-md-12">
+			            <label><input type="checkbox">我同意 <a href="javascript:;" data-toggle="modal" data-target="#templatemo_modal">服务条款</a> 和 <a href="javascript:;" data-toggle="modal" data-target="#templatemo_modal1">隐私政策。</a></label>
+			          </div>
+			        </div>
+			        <div class="form-group">
+			          <div class="col-md-12">
+			          	<button type="submit" class="btn btn-info" id="validateBtn">创建账户</button>
+			            <!-- <input type="submit" value="创建账户" class="btn btn-info"> -->
+			            <a href="login" class="pull-right">登录</a>
+			          </div>
+			        </div>	
+				</div>				    	
+		      </form>		      
+		</div>
+	</div>
+	<!-- 服务条款Modal -->
+	<div class="modal fade" id="templatemo_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+	        <h4 class="modal-title" id="myModalLabel">服务条款</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<p>本服务由 <a rel="nofollow" href="http://walterhoson.coding.me">wayne</a>提供。 </p>
+	        <p>如有意见或建议，请及时与我<a rel="nofollow" href="http://walterhoson.coding.me">取得联系</a>。</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- 隐私政策model -->
+	<div class="modal fade" id="templatemo_modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+	        <h4 class="modal-title" id="myModalLabel">隐私政策</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<p>由于教师账户具有较高权限，注册本服务的教师账户，不得告知他人。 </p>
+	        <p>如有违反，管理员有权撤销教师权限。</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+</body>
+</html>

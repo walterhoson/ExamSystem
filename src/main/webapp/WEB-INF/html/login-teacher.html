@@ -1,0 +1,105 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../resources/js/upLoadExcel.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>登陆</title>
+</head>
+<body>
+	<form action="logincheck" method="post">
+		用户名:<input type="text" id="username" name="userName"/></br>
+		密码:<input type="password" id="password" name="password"/></br>
+		<input type="submit" value="登陆" /></br>
+		<a href="regist">暂时没有账号，先注册</a>
+	</form>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<head>
+	<title>Login</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="../resources/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="../resources/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="../resources/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+	<link href="../resources/css/bootstrapValidator.css" rel="stylesheet" type="text/css">	
+	<link href="../resources/css/login_style.css" rel="stylesheet" type="text/css">	
+	
+	<script type="text/javascript" src="../resources/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../resources/js/bootstrapValidator.js"></script>
+	<script type="text/javascript" src="../resources/js/jquery-form.js"></script>
+	<script type="text/javascript" src="../resources/js/login.js"></script>
+</head>
+<body class="templatemo-bg-gray">
+	<div class="container">
+		<div class="col-md-12">
+			<h1 class="margin-bottom-15">教师登录</h1>
+			<form id="Loginform" action="logincheck" class="form-horizontal templatemo-container templatemo-login-form-1 margin-bottom-30 " role="form" method="post">
+				<div class="form-group">
+					<div class="col-xs-12">
+						<div class="control-wrapper">
+							<label for="username" class="control-label fa-label"><i
+								class="fa fa-user fa-medium"></i></label>
+							<div class="col-lg-12">
+								<input type="text" class="form-control" id="username"
+									placeholder="Username" name="userName">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+		          <div class="col-md-12">
+		          	<div class="control-wrapper">
+		            	<label for="password" class="control-label fa-label"><i class="fa fa-lock fa-medium"></i></label>
+		            	<div class="col-lg-12">
+		            	<input type="password" class="form-control" id="password" placeholder="Password" name="password">
+		            	</div>
+		            </div>
+		          </div>
+		        </div>
+		        <div class="form-group">
+		          <div class="col-md-12">
+	             	<div class="checkbox control-wrapper">
+	                	<label>
+	                  		<input type="checkbox"> 记住账号
+                		</label>
+	              	</div>
+		          </div>
+		        </div>
+		        <div class="form-group">
+		          <div class="col-md-12">
+		          	<div class="control-wrapper">
+		          		<!-- <input type="submit" value="登录" class="btn btn-info"> -->
+		          	  	<button type="submit" class="btn btn-info" id="validateBtn">登录</button>
+		          		<a href="forgot-password" class="text-right pull-right">忘记密码？</a>
+		          	</div>
+		          </div>
+		        </div>
+		        <hr>
+		        <div class="text-center">
+		      	<a href="regist" class="templatemo-create-new">创建新账户 <i class="fa fa-arrow-circle-o-right"></i></a>	
+		      </div>
+		    <!--     <div class="form-group">
+		        	<div class="col-md-12">
+		        		<label>Login with: </label>
+		        		<div class="inline-block">
+		        			<a href="#"><i class="fa fa-facebook-square login-with"></i></a>
+			        		<a href="#"><i class="fa fa-twitter-square login-with"></i></a>
+			        		<a href="#"><i class="fa fa-google-plus-square login-with"></i></a>
+			        		<a href="#"><i class="fa fa-tumblr-square login-with"></i></a>
+			        		<a href="#"><i class="fa fa-github-square login-with"></i></a>
+		        		</div>		        		
+		        	</div>
+		        </div> -->
+		      </form>
+		</div>
+	</div>
+</body>
+</html>
